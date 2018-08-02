@@ -35,7 +35,7 @@ npm install
       |__ modules                               # 模块
         |__ item.js                               # 电影详情->对应 pages/item
       |__ mutations-type.js                     # mutations 常量
-    |__ router                                # 工具
+    |__ router                                # 路由
       |__ index.js                              # 路由配置
 |__ static                                    # 静态资源
     |__ .gitkeep

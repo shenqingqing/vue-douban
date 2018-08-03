@@ -16,6 +16,7 @@
     "vue-lazyload": "^1.2.1",
     "vuex": "^3.0.1",
     "mint-ui": "^2.2.13",
+    "mockjs": "^1.0.1-beta3",
     "axios": "^0.17.1",
     "jshint": "^2.9.5"
   },
@@ -49,6 +50,7 @@
     "install": "^0.11.0",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
+    "mockjs": "^1.0.1-beta3",
     "lodash": "^4.17.10",
     "node-notifier": "^5.1.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",

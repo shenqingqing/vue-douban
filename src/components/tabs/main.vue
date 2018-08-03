@@ -68,9 +68,14 @@ export default {
             userinfo: {}
         }
     },
+    computed: {
+        scroll () {
+            return this.$refs.scroll
+        }
+    },
     created () {
          this.userinfo= {
-            nickName: '江南偏南',
+            nickName: '江南偏南_MD',
             realName: '花花'
         }
     },

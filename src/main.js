@@ -9,6 +9,7 @@ import rem from './assets/remSupport/index.js'
 import Scroller from './assets/ui/scroller'
 import './assets/css/base.css'
 import './assets/css/reset.css'
+import '@/common/mrHeader/components.js'
 require('swiper/dist/css/swiper.css')
 
 Vue.use(_)

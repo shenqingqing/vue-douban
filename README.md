@@ -21,8 +21,14 @@ npm install
         |__ board                               # 榜单
         |__ main                                # 关于我
         |__ search                              # 电影搜索
+    |__ api                                   # api
+      |__ config.js                             # 公用常量
+      |__ getMovieData.js                       # 电影模块接口
     |__ common                                # 组件
       |__ mrTabbar                              # tab组件
+      |__ mrHeader                              # head组件
+      |__ js                                    # 公用js
+        |__ comaxios                              # axios配置
     |__ assets                                # 静态资源
       |__ css                                   # css
       |__ image                                 # 图片
@@ -37,6 +43,8 @@ npm install
       |__ mutations-type.js                     # mutations 常量
     |__ router                                # 路由
       |__ index.js                              # 路由配置
+    |__ mock                                  # mock数据
+      |__ mock.js                               # mock接口数据
 |__ static                                    # 静态资源
     |__ .gitkeep
     

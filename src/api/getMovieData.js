@@ -1,18 +1,28 @@
 import axios from 'axios'
-// 获取电影条目信息：
-export function getMoviedata (params) {
-    return new Promise(function (resolve, reject) {
-      axios.post('/getMovie').then(
-        function (res) {
-          resolve(res)
+import { LOAD_TEXT } from 'api/config'
+// 豆瓣电影Top250列表
+export function getTopaoMoviedata (that, params, page) {
+    that.$indicator.open(LOAD_TEXT)
+    const url = '/douban/top250?p=' + page+'&c=10' 
+    return axios.post(url, params).then((res) => {
+        that.$indicator.close()
+        if(res) {
+            return Promise.resolve(res.data)
         }
-      )
+    }).catch(function(eMsg) {
+        that.$indicator.close()
     })
   }
-  export function getCommunity (params) {
-    const url = '/hall' + params.hallType 
+//   电影详情
+  export function getSubjectById (that, id) {
+    that.$indicator.open(LOAD_TEXT)
+    const url = '/douban/subject' + id 
     return axios.get(url).then((res) => {
-      console.log(res)
-      return Promise.resolve(res.data)
-    })
+        that.$indicator.close()
+        if (res) {
+          return Promise.resolve(res.data)
+        }
+    }).catch(function (eMsg) {
+        that.$indicator.close()
+      })
   }

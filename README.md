@@ -27,6 +27,7 @@ npm install
     |__ common                                # 组件
       |__ mrTabbar                              # tab组件
       |__ mrHeader                              # head组件
+      |__ filter                                # 过滤器
       |__ js                                    # 公用js
         |__ comaxios                              # axios配置
     |__ assets                                # 静态资源

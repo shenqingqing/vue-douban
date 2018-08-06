@@ -1382,7 +1382,7 @@ Mock.mock(baseURL+'/douban/top250', () => {
   };
   return obj;
 });
-
+// 豆瓣电影详情
 Mock.mock(baseURL+'/douban/subject', () => {
     const obj = {
         "rating": {
@@ -1483,5 +1483,32 @@ Mock.mock(baseURL+'/douban/subject', () => {
       }
   return obj;
 })
-
+// 豆瓣轮播图
+Mock.mock(baseURL+'/douban/slideList', () => {
+    const obj = {
+        "slideList": [
+            {
+              "bannerImgUrl": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p457760035.jpg",
+              "name": "阿曼德拉·斯坦伯格 ",
+              "id": "1320554"
+            },
+            {
+              "bannerImgUrl": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1606727862.jpg",
+              "name": "曼迪·摩尔",
+              "id": "1000013"
+            },
+            {
+              "bannerImgUrl": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p492406163.jpg",
+              "name": "格温多兰·克里斯蒂",
+              "id": "1319269"
+            },
+            {
+              "bannerImgUrl": "https://img3.doubanio.com/view/photo/s_ratio_poster/public/p510861873.jpg",
+              "name": "布莱德利·惠特福德",
+              "id": "1027158"
+            }
+          ]
+    }
+    return obj;
+})
 export default Mock;

@@ -26,3 +26,16 @@ export function getTopaoMoviedata (that, params, page) {
         that.$indicator.close()
       })
   }
+  //   轮播图
+  export function getSlide (that) {
+    that.$indicator.open(LOAD_TEXT)
+    const url = '/douban/slideList'
+    return axios.get(url).then((res) => {
+        that.$indicator.close()
+        if (res) {
+          return Promise.resolve(res.data)
+        }
+    }).catch(function (eMsg) {
+        that.$indicator.close()
+      })
+  }

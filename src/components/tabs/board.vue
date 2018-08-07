@@ -9,7 +9,8 @@
                    <swiper :options="swiperOptionBanner" class="headerBanner" v-if="bannerArray.length > 1">
                         <swiper-slide v-for="(item,index) in bannerArray" :key="index">
                             <div class="innerdiv">
-                            <mr-img :url="item.bannerImgUrl | resizeImageWH(750, 600)" class="img"></mr-img>
+                            <!-- <mr-img :url="item.bannerImgUrl | resizeImageWH(750, 600)" class="img"></mr-img> -->
+                            <img v-lazy="item.bannerImgUrl" :url="item.bannerImgUrl | resizeImageWH(750, 600)" class="img">
                             </div>
                         </swiper-slide>
                         <div class="swiper-pagination" slot="pagination"></div>
@@ -59,9 +60,9 @@ export default {
         },
         getSlideList() {
             getSlide(this).then((res) => {
-                // if(res) {
-                    this.bannerArray = res.slideList;
-                // }
+                if(res) {
+                    this.bannerArray = res.data.slideList;
+                }
             })
         }
     }
@@ -69,5 +70,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.innerdiv{
+    height: 4.8rem;
+}
 </style>

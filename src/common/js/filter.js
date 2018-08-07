@@ -19,3 +19,12 @@ function resizeImageWidthHeight (url, w, h) {
       return url ? `${url}?x-oss-process=image/resize,m_fill,h_${h},w_${w}/quality,q_80` : ''
     }
   }
+  function resetUrl (url) {
+    if (url && url.indexOf('?Expires=') > -1) {
+      let array = url.split('?Expires=')
+      if (array.length > 0) {
+        url = array[0]
+      }
+    }
+    return url
+  }

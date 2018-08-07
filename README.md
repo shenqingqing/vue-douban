@@ -27,15 +27,14 @@ npm install
     |__ common                                # 组件
       |__ mrTabbar                              # tab组件
       |__ mrHeader                              # head组件
+      |__ scroller                              # scroll组件
       |__ filter                                # 过滤器
-      |__ js                                    # 公用js
-        |__ comaxios                              # axios配置
+        |__ comaxios.js                           # axios配置
+        |__ filter.js                             # 过滤器
+        |__ rem.js                                # rem
     |__ assets                                # 静态资源
       |__ css                                   # css
       |__ image                                 # 图片
-      |__ remSupport                            # rem文件
-      |__ ui                                    # ui框架
-        |__ scroller                              # 滑动组件
     |__ main.js
     |__ store                                 # vuex
       |__ index.js                              # 全局

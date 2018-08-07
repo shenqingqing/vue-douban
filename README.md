@@ -24,6 +24,7 @@ npm install
     |__ api                                   # api
       |__ config.js                             # 公用常量
       |__ getMovieData.js                       # 电影模块接口
+      |__ requestAxios.js                       # 请求封装
     |__ common                                # 组件
       |__ mrTabbar                              # tab组件
       |__ mrHeader                              # head组件

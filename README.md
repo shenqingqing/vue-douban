@@ -28,7 +28,7 @@ npm install
       |__ mrTabbar                              # tab组件
       |__ mrHeader                              # head组件
       |__ scroller                              # scroll组件
-      |__ filter                                # 过滤器
+      |__ js                                    # 公共js方法
         |__ comaxios.js                           # axios配置
         |__ filter.js                             # 过滤器
         |__ rem.js                                # rem

@@ -277,7 +277,7 @@
   .backBtn {
     width: .2rem!important;
     height: 44px!important;
-    /* background: url(../image/publicimage/back.png) no-repeat center center!important; */
+    background: url(../image/back.png) no-repeat center center!important;
     background-size: 100%!important;
     display: inline-block!important;
     top: 0;

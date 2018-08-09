@@ -44,6 +44,18 @@ export default new Router({
           component: resolve => require(['@/components/tabs/main.vue'], resolve)
         }
       ]
-    }
+    },
+    {
+      path: '/broadList',
+      meta: {
+          title: '豆瓣电影Top250',
+          keepAlive: false // 不需要缓存
+      },
+      component: resolve => require(['@/components/broad/list.vue'], resolve),
+      beforeEnter: (to, from, next) => {
+          window.document.title = to.meta.title
+          next()
+      }
+  },
   ]
 })

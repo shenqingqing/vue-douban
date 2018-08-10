@@ -1401,7 +1401,7 @@ Mock.mock(baseURL+'/douban/top250?p=2&c=10', () => {
     };
     return obj;
   });
-  Mock.mock(baseURL+'/douban/top250?p=3&c=10', () => {
+Mock.mock(baseURL+'/douban/top250?p=3&c=10', () => {
     const obj = {
       "code": 1000,
       "msg": "ok",
@@ -1622,7 +1622,7 @@ Mock.mock(baseURL+'/douban/top250?p=2&c=10', () => {
     return obj;
   });
 // 豆瓣电影详情
-Mock.mock(baseURL+'/douban/subject', () => {
+Mock.mock(baseURL+'/douban/subject?movidId=1295644', () => {
     const obj = {
         "code": 1000,
         "msg": "ok",

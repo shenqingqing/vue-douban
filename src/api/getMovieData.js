@@ -10,7 +10,7 @@ export function getTopaoMoviedata (that, params, page) {
 //   电影详情
   export function getSubjectById (that, id) {
     that.$indicator.open(LOAD_TEXT)
-    const url = '/douban/subject' + id 
+    const url = '/douban/subject?movidId=' + id 
     return customGETAxios(that, url)
   }
   //   轮播图

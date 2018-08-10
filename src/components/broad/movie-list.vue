@@ -1,7 +1,7 @@
 <template>
     <div class="md-movie-list">
         <div class="list">
-            <router-link v-for="(item, index) in boardsList" tag="li" :key="index" :to="{path: '/main'}" >
+            <router-link v-for="(item, index) in boardsList" tag="li" :key="index" :to="{ name: 'broadItem', params: { movidId: item.id ,movieTitle: item.title }}" >
                 <movie-item :movie="item"></movie-item>
             </router-link>
         </div>

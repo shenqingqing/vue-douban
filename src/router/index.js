@@ -57,5 +57,18 @@ export default new Router({
           next()
       }
   },
+  {
+    path: '/broadItem/:movidId',
+    name: 'broadItem',
+    meta: {
+        title: '豆瓣电影Top250',
+        keepAlive: false // 不需要缓存
+    },
+    component: resolve => require(['@/components/broad/item.vue'], resolve),
+    beforeEnter: (to, from, next) => {
+        window.document.title = to.meta.title
+        next()
+    }
+  },
   ]
 })

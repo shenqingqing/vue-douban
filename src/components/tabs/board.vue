@@ -26,12 +26,12 @@
                         <swiper :options="swiperOption" class="topTabList" ref="mySwiper" >
                         <swiper-slide v-for="(movie, index) in boards.subjects" :key="index">
                             <div class="inner">
-                                    <!-- <router-link v-for="(movie, i) in boards.subjects" tag="li" :key="i" :to="{path: '/main'}" > -->
+                                    <router-link  :to="{ name: 'broadItem', params: { movidId: movie.id ,movieTitle: movie.title }}" >
                                         <div  class="movie-item">
                                             <img v-lazy="movie.images.large" :url="movie.images.large">
                                             <div>{{ movie.title }}</div>
                                         </div>
-                                    <!-- </router-link> -->
+                                    </router-link>
                                 </div>
                         </swiper-slide>
                         </swiper>
@@ -57,7 +57,7 @@ export default {
                 }
             },
             swiperOption: {
-                slidesPerView: 3.8
+                slidesPerView: 3.5
             },
         }
     },

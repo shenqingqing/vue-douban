@@ -6,13 +6,7 @@
         <div class="page-content">
             <swiper-scroller ref="scroll" :pullDownRefresh="true" @pullingDown="pullingDown" @pullingUp="pullingUp">
                 <input type="text" class="search" placeholder="请输入搜索内容..." v-model="searchKeyWord" @keyup.enter="startSearch()">
-                <div>123456</div>
-                <div>123456</div>
-                <div>123456</div>
-                <div>123456</div>
-                <div>123456</div>
-                <div>123456</div>
-                <div>123456</div>
+                <!-- <movie-list :searchList="searchList" v-if="searchList.length>0"></movie-list>  -->
             </swiper-scroller>
         </div>
     </div>
@@ -41,7 +35,7 @@ export default {
             }, 20) 
         },
         startSearch () {
-
+            console.log("haha")
         }
     }
 }

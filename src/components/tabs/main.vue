@@ -19,14 +19,18 @@
                         <img src="@/assets/image/mine/icon_myorder.png" class="img"></div>
                         <p class="text text-c black3 font28 mt30">我的订单</p>
                     </router-link>
-                    <router-link class="orderCont" tag="div" to="/myIssue">
+                    <!-- <router-link class="orderCont" tag="div" to="/myIssue"> -->
+                    <div class="orderCont">
                         <div class="icon2"><img src="@/assets/image/mine/icon_issue.png" class="img"></div>
                         <p class="text text-c black3 font28 mt30">我的收藏</p>
-                    </router-link>
-                    <router-link class="orderCont" tag="div" :to="{path: '/myReply', query:{'type': 'Offic'}}">
+                    </div>
+                    <!-- </router-link> -->
+                    <!-- <router-link class="orderCont" tag="div" :to="{path: '/myReply', query:{'type': 'Offic'}}"> -->
+                    <div class="orderCont">
                         <div class="icon2"><img src="@/assets/image/mine/icon_reply.png" class="img"></div>
                         <p class="text text-c black3 font28 mt30">我的积分</p>
-                    </router-link>
+                    </div>
+                    <!-- </router-link> -->
                     <div class="orderCont" @click="myActive()">
                         <div class="icon2"><img src="@/assets/image/mine/icon_active.png" class="img"></div>
                         <p class="text text-c black3 font28 mt30">观看历史</p>
@@ -34,27 +38,31 @@
                 </div>
                 <div class="myMenu">
                     <ul>
-                        <router-link to='/feedback' tag="li">
+                        <!-- <router-link to='/feedback' tag="li">
                             <span class="icon"><img src="@/assets/image/mine/icon_back.png" class="img"></span>
                             <span class="font28 black3">意见反馈</span>
                             <span class="arrow"></span>
-                        </router-link>
+                        </router-link> -->
                         <!-- <router-link to='/serviceHotline' tag="li">
                             <span class="icon"><img src="@/assets/image/mine/icon_hot.png" class="img"></span>
                             <span class="font28 black3">服务热线</span>
                             <span class="arrow"></span>
                         </router-link> -->
-                        <router-link to="/about" tag="li" class="aboutApp">
+                        <!-- <router-link to="/about" tag="li" class="aboutApp"> -->
+                        <li class="aboutApp">
                             <span class="icon"><img src="@/assets/image/mine/icon_aboutapp.png" class="img"></span>
                             <span class="font28 black3">关于APP</span>
                             <span class="arrow"></span>
                             <span class="shareImg"><img src="@/assets/image/mine/signShare.png"/></span>
-                        </router-link>
-                        <router-link to="/set" tag="li">
+                        </li>
+                        <!-- </router-link> -->
+                        <!-- <router-link to="/set" tag="li"> -->
+                        <li>
                             <span class="icon"><img src="@/assets/image/mine/icon_set.png" class="img"></span>
                             <span class="font28 black3">设置</span>
                             <span class="arrow"></span>
-                        </router-link>
+                        </li>
+                        <!-- </router-link> -->
                     </ul>
                 </div>
             </swiper-scroller>
@@ -89,6 +97,9 @@ export default {
             setTimeout(() => {
                 this.scroll.pullUpLoadEnd()
             }, 20) 
+        },
+        myActive () {
+            this.$router.push('/myWatch')
         }
     }
 }

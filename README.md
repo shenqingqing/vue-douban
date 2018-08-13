@@ -21,6 +21,8 @@ npm install
         |__ board                               # 榜单
         |__ main                                # 关于我
         |__ search                              # 电影搜索
+      |__ broad                               # 榜单
+      |__ mine                                # 我的
     |__ api                                   # api
       |__ config.js                             # 公用常量
       |__ getMovieData.js                       # 电影模块接口
@@ -28,6 +30,7 @@ npm install
     |__ common                                # 组件
       |__ mrTabbar                              # tab组件
       |__ mrHeader                              # head组件
+      |__ mrTopTab                              # tab切换组件
       |__ scroller                              # scroll组件
       |__ js                                    # 公共js方法
         |__ comaxios.js                           # axios配置

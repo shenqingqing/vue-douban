@@ -13,6 +13,7 @@ import Scroller from './common/scroller'
 import './assets/css/base.css'
 import './assets/css/reset.css'
 import '@/common/mrHeader/components.js'
+import '@/common/mrTopTab/components.js'
 import { Indicator, Toast, MessageBox, DatetimePicker, Field, CellSwipe, Actionsheet, Switch } from 'mint-ui'
 require('swiper/dist/css/swiper.css')
 require('@/mock/mock')

@@ -70,5 +70,21 @@ export default new Router({
         next()
     }
   },
+  {
+    path: '/myWatch',
+    name: 'myWatch',
+    meta: {
+      pageName: 'myWatch'
+    },
+    component: resolve => require(['@/components/mine/myWatch.vue'], resolve),
+  },
+  {
+    path: '/myorder',
+    name: 'myorder',
+    meta: {
+      pageName: 'myorder'
+    },
+    component: resolve => require(['@/components/mine/myorder.vue'], resolve),
+  }
   ]
 })
